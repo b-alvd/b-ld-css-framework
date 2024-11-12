@@ -25,10 +25,6 @@
     --headline-text: #F4F6F9;
 }
 
-body {
-    padding: 1rem;
-}
-
 .sidebar {
     position: sticky;
     top: 0;
@@ -42,7 +38,7 @@ body {
     color: var(--white);
     flex-direction: column;
     background: var(--sidebar-background);
-    transition: max-width 0.1s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .sidebar-title {
     color: #E0EAFF;
@@ -154,7 +150,7 @@ body.collapsed .sidebar-top {
     font-weight: 500;
     line-height: 1.125rem;
     margin-bottom: 0.5rem;
-    animation: fadeIn 0.2s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 body.collapsed h2 {
     display: none;
@@ -199,7 +195,7 @@ body.collapsed .sidebar-links li {
     flex-grow: 1;
     overflow: hidden;
     white-space: nowrap;
-    animation: fadeIn 0.2s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 .sidebar-links li a img {
     height: 2.125rem;
@@ -251,7 +247,7 @@ body.collapsed .sidebar-links li {
     border-radius: 1rem;
     min-width: 1rem;
     color: var(--cta-text);
-    animation: fadeIn 0.2s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 .sidebar__action p {
     margin-bottom: 0.75rem;
@@ -312,7 +308,7 @@ body.collapsed .sidebar__action {
     border-radius: 1rem;
     min-width: 1rem;
     color: var(--cta-text);
-    animation: fadeIn 0.2s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 .sidebar__action p {
     margin-bottom: 0.75rem;
@@ -385,22 +381,26 @@ body.collapsed .sidebar__action {
     flex-direction: column;
     gap: 0.25rem;
     white-space: nowrap;
-    animation: fadeIn 0.2s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 .user-name {
     font-weight: 600;
     text-align: left;
     color: var(--text);
-    animation: fadeIn 0.2s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 .email {
     color: var(--text-lighter);
     font-size: 0.8125rem;
-    animation: fadeIn 0.2s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
 }
 .logout {
-    animation: fadeIn 0.2s ease-in-out;
-    margin-left: auto;
+    animation: fadeIn 0.4s ease-in-out;
+    margin-left: 2rem;
+    color: var(--sidebar-background);
+}
+.logout#text {
+    visibility: hidden;
 }
 .logout svg {
     color: var(--logout);
@@ -418,6 +418,7 @@ body.collapsed .logout {
     place-items: center;
     cursor: pointer;
     right: -1rem;
+    top: 1.5rem;
     background: var(--exp-btn-background);
     z-index: 2;
     width: 2rem;
@@ -430,20 +431,24 @@ body.collapsed .logout {
     width: 1.25rem;
     height: 1.25rem;
 }
+body.collapsed .expand-btn {
+    left: 65px;
+}
 body.collapsed .expand-btn svg {
     transform: rotate(-180deg);
 }
+
 .bottom-links {
     margin-top: auto;
 }
 
 @keyframes fadeIn {
-    from {
+    0% {
         width: 0;
         opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 1;
         width: 100%;
     }

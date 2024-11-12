@@ -1,0 +1,87 @@
+main {
+    width: 99%;
+    height: 96vh;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #714085;
+}
+main h3 {
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-color: #714085;
+}
+
+main.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main.components {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main.components .components__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: auto;
+    width: 100%;
+}
+main.components .components__wrapper .component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    max-width: 350px;
+    background-color: #444444;
+    color: white;
+    border-radius: 1rem;
+}
+.component .component__name {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+.component img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #714085;
+}
+.component p.component__description {
+    margin: 1rem 2.184rem;
+    text-align: justify;
+}
+.component .component__difficulty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.component .component__difficulty .stars svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.component a {
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #714085;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+}
+.component a:hover {
+    background-color: #aa61c7;
+}

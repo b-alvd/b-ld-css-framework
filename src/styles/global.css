@@ -10,3 +10,22 @@ body {
     height: 100%;
     padding: 1rem;
 }
+p {
+    margin: 0;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #272727;
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+    background: #714085;
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #764888;
+}
