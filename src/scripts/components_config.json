@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Component 1",
+        "image": "https://component1.com/image.png",
+        "description": "Component 1 description",
+        "difficulty": 3,
+        "type": "header"
+    },
+    {
+        "id": 2,
+        "name": "Component 2",
+        "image": "https://component2.com/image.png",
+        "description": "Component 2 description",
+        "difficulty": 1,
+        "type": "footer"
+    }
+]
